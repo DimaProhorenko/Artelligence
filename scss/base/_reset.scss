@@ -6,6 +6,13 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: $primary-font;
+    color: $clr-text;
+    line-height: 1.6;
+    background-color: $clr-white;
+}
+
 ul {
     list-style: none;
 }
@@ -19,9 +26,6 @@ img {
     display: inline-block;
 }
 
-body {
-    font-family: $font-stack;
-    color: $clr-text;
-    line-height: 1.6;
-    background-color: $clr-white;
+h1, h2, h3, h4, h5, h6 {
+    font-family: $secondary-font;
 }
