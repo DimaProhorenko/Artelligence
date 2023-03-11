@@ -1,0 +1,96 @@
+.container {
+  width: 90%;
+  max-width: 1080px;
+  margin: 0 auto; }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+img {
+  max-width: 100%;
+  display: inline-block; }
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  color: #787878;
+  line-height: 1.6;
+  background-color: #ffffff; }
+
+.header {
+  min-height: 100vh;
+  background: center/cover no-repeat url("../img/banner/banner-background.png");
+  padding: 2em 0;
+  position: relative; }
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .header__logo {
+    width: 10rem;
+    z-index: 100; }
+  .header__burger {
+    z-index: 100; }
+    @media (min-width: 600px) {
+      .header__burger {
+        display: none; } }
+    .header__burger-button {
+      border: none;
+      display: block;
+      width: 2em;
+      height: 2em;
+      position: relative;
+      background: transparent;
+      cursor: pointer; }
+    .header__burger-line {
+      width: 100%;
+      height: 2px;
+      background-color: #ffffff;
+      display: block;
+      position: relative; }
+      .header__burger-line::before, .header__burger-line::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: inherit; }
+      .header__burger-line::before {
+        position: absolute;
+        top: -300%;
+        left: 0; }
+      .header__burger-line::after {
+        position: absolute;
+        top: 300%;
+        left: 0; }
+  .header__nav {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background: center/cover no-repeat url("../img/banner/banner-background.png");
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 99;
+    transition: transform cubic-bezier(0.56, 0.04, 0.95, 1.23) 250ms; }
+    .header__nav.active {
+      transform: translateX(100%); }
+    .header__nav-item:not(:last-child) {
+      margin-bottom: 1em; }
+    .header__nav-link {
+      color: inherit;
+      text-transform: capitalize;
+      font-size: 2rem; }

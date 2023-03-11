@@ -1,0 +1,32 @@
+@mixin absolute_tl($top, $left) {
+    position: absolute;
+    top: $top;
+    left: $left; 
+}
+
+@mixin for-phone-only {
+    @media (max-width: $phone-only) { @content; }
+}
+
+@mixin for-tablet-up {
+    @media (min-width: $tablet-up) { @content; }
+}
+
+@mixin for-desktop-up {
+    @media (min-width: $desktop-up) { @content; }
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-cc {
+    @include flex-center;
+    flex-direction: column;
+}
+
+@mixin bg-image($url, $position: center, $size: cover, $repeat: no-repeat) {
+    background: $position / $size $repeat url($url);
+}
