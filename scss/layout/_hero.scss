@@ -1,5 +1,6 @@
 .hero {
-    min-height: 100vh;
+    // min-height: 120vh;
+    padding-top: 30vh;
     @include bg-image('../img/banner/banner-background.png');
     @include flex-center;
     text-align: center;
@@ -17,8 +18,11 @@
     }
 
     &__cta {
+        margin-bottom: 3em;
         &-btn {
             margin: 0 .5em;
         }
     }
+
+    
 }

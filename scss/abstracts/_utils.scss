@@ -1,5 +1,48 @@
+.section {
+    padding: 3em 0;
+    text-align: center;
+
+    &__subtitle {
+        font-size: 1.2rem;
+        color: $clr-secondary;
+        margin-bottom: .2em;
+    }
+
+    &__title {
+        font-size: 1.6rem;
+        margin-bottom: .4em;
+    }
+
+    &__text {
+        letter-spacing: 1px;
+        margin-bottom: 2em;
+    }
+}
+
 .container {
     width: 90%;
     max-width: 1080px;
     margin: 0 auto;
+}
+
+.main-flex {
+    @include flex(column, flex-start);
+
+    @include for-tablet-up {
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    &__item {
+        width: 100%;
+
+        &:not(:last-child) {
+            margin-bottom: 2em;
+        }
+
+        @include for-tablet-up {
+            width: 45%;
+        }
+    }
 }

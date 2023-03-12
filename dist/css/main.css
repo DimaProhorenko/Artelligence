@@ -1,7 +1,38 @@
+.section {
+  padding: 3em 0;
+  text-align: center; }
+  .section__subtitle {
+    font-size: 1.2rem;
+    color: #2be0f7;
+    margin-bottom: .2em; }
+  .section__title {
+    font-size: 1.6rem;
+    margin-bottom: .4em; }
+  .section__text {
+    letter-spacing: 1px;
+    margin-bottom: 2em; }
+
 .container {
   width: 90%;
   max-width: 1080px;
   margin: 0 auto; }
+
+.main-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start; }
+  @media (min-width: 600px) {
+    .main-flex {
+      flex-direction: row;
+      justify-content: space-between; } }
+  .main-flex__item {
+    width: 100%; }
+    .main-flex__item:not(:last-child) {
+      margin-bottom: 2em; }
+    @media (min-width: 600px) {
+      .main-flex__item {
+        width: 45%; } }
 
 *,
 *::before,
@@ -12,7 +43,7 @@
 
 body {
   font-family: "Manrope", sans-serif;
-  color: #787878;
+  color: #262626;
   line-height: 1.6;
   background-color: #ffffff; }
 
@@ -35,6 +66,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 30px 30px 30px 0;
   background-color: #2397ae;
   color: #ffffff;
+  text-transform: capitalize;
   padding: .65em 1em; }
 
 .btn__icon {
@@ -61,9 +93,12 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   width: 100%;
   height: 80px;
+  background: linear-gradient(45deg, #02162d, #36e0f7);
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  z-index: 10000; }
   .header__container {
     display: flex;
     justify-content: space-between;
@@ -120,6 +155,7 @@ h1, h2, h3, h4, h5, h6 {
     background: center/cover no-repeat url("../img/banner/banner-background.png");
     color: #ffffff;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -136,9 +172,10 @@ h1, h2, h3, h4, h5, h6 {
       font-size: 2rem; }
 
 .hero {
-  min-height: 100vh;
+  padding-top: 30vh;
   background: center/cover no-repeat url("../img/banner/banner-background.png");
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -150,5 +187,20 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: .5em; }
   .hero__lead {
     margin-bottom: 2em; }
-  .hero__cta-btn {
-    margin: 0 .5em; }
+  .hero__cta {
+    margin-bottom: 3em; }
+    .hero__cta-btn {
+      margin: 0 .5em; }
+
+.about__images {
+  position: relative;
+  margin-bottom: 3rem; }
+
+.about__img-2 {
+  max-width: 10rem;
+  position: absolute;
+  bottom: -2rem;
+  right: -1rem; }
+
+.about__lower-item {
+  margin-bottom: 1.5em; }
