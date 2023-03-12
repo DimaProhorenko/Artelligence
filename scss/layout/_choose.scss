@@ -1,0 +1,28 @@
+.choose {
+    padding-bottom: 0;
+    color: $clr-white;
+    @include bg-image('../img/banner/banner-background.png');
+    &__image {
+        position: relative;
+
+        &-container {
+            order: 2;
+            margin-bottom: 0 !important;
+        }
+    }
+
+    &__img {
+        
+        position: relative;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &__list {
+        margin-bottom: 3em;
+        &-item {
+            margin: .5em 0;
+        }
+    }
+}

@@ -1,5 +1,5 @@
 .hero {
-    // min-height: 120vh;
+    min-height: 100vh;
     padding-top: 30vh;
     @include bg-image('../img/banner/banner-background.png');
     @include flex-center;
@@ -10,7 +10,7 @@
         font-size: 1.95rem;
         letter-spacing: 1;
         line-height: 1.3;
-        margin-bottom: .5em;
+        margin-bottom: .5em;    
     }
 
     &__lead {
@@ -24,5 +24,18 @@
         }
     }
 
-    
+    &__image {
+        position: relative;
+        // width: 100%;
+        // height: 320px;
+        // max-width: 450px;
+
+        img {
+            position: relative;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            vertical-align: middle;
+        }
+    }
 }
