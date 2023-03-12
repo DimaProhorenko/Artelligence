@@ -1,33 +1,72 @@
 .testimonials {
     background-color: $clr-light-blue;
-    text-align: left;
 
-    &__item {
-        padding: 2em;
-        background-color: $clr-white;
-        border-radius: 2rem;
-        border-bottom: 3px solid $clr-dark-cyan;
+    &__slider {
+        max-width: 800px;
     }
 
-    &__title {
-        color: $clr-accent;
-        text-transform: capitalize;
-        margin: .4em 0 .2em 0;
+    &__slide {
+        width: 90%;
+        padding: 2em;
+        border-radius: 2em;
+        background-color: $clr-white;
+        border-bottom: 3px solid $clr-dark-cyan;
+        text-align: left;
     }
 
     &__subtitle {
-        color: $clr-text;
+        text-transform: capitalize;
+        color: $clr-accent;
+        margin: .2em 0 .3em 0;
+    }
+
+    &__title {
         font-weight: 400;
+        color: $clr-text;
     }
 
-    &__slider {
+    &__controls {
+        // position: absolute;
+        // top: 50%;
+        // right: 0;
+        // transform: translate(50%, -50%);
+        // width: 50px;
+        // height: 50px;
+        // z-index: 2;
         position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
     }
 
-    &__arrows {
+    &__control {
+        background-color: $clr-very-dark-mostly-black-blue;
+        color: $clr-white;
+        border: none;
+        border-radius: 50%;
+        display: block;
+        width: 2.5em;
+        height: 2.5em;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 1em;
         position: absolute;
         top: 50%;
-        right: 0;
-        transform: translateY(-50%);
+        right: 10%;
+        transform: translate(50%, -50%);
+
+        &::after {
+            display: none;
+        }
+
+        &--prev {
+            left: auto;
+        }
+
+        &--next {
+            top: calc(50% + 4em);
+        }
     }
 }

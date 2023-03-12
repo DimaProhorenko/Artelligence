@@ -10,14 +10,12 @@ burgerBtn.addEventListener('click', e => {
 
 // Splide
 document.addEventListener('DOMContentLoaded', e => {
-    const testimonialsSplide = new Splide('.testimonials__slider', {
-        type: 'slide',
-        rewind: true,
-        gap: '3em',
-        autoplay: false,
-        pause: false,
-        interval: 2000, 
-        pauseOnHover: true,
+    const testimonialsSlide = new Swiper('.testimonials__slider', {
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+        },
+        loop: true,
+        spaceBetween: 50,
     });
-    testimonialsSplide.mount();
 })

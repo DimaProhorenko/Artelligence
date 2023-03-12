@@ -19,9 +19,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Swiper js -->
     <link
       rel="stylesheet"
-      href="../node_modules/@splidejs/splide/dist/css/splide.min.css"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="./css/main.css" />
     <title>Artelligence</title>
@@ -415,47 +416,66 @@
           <h3 class="section__subtitle">Testimonials</h3>
           <h2 class="section__title">Hear it From Our Clients</h2>
         </div>
-        <div
-          class="splide slider testimonials__slider"
-          aria-label="Testimonials Slider"
-        >
-          <div class="splide__arrows testimonials__arrows">
+        <div class="swiper testimonials__slider">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper testimonials__wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="testimonials__slide">
+                <p class="testimonials__text">
+                  Quisquam est, qui dolorem ipsum quia dolor sit amet conse
+                  aetur, adipisci velit, sed ruia non numquam eius modi temor
+                  incidunt ut labore et dolore magnam alieuam zuaerat voluta tem
+                  nostrum exercitationem
+                </p>
+                <h4 class="testimonials__subtitle">Peter Johns</h4>
+                <h3 class="testimonials__title">Head of informatics at EBI</h3>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonials__slide">
+                <p class="testimonials__text">
+                  Quisquam est, qui dolorem ipsum quia dolor sit amet conse
+                  aetur, adipisci velit, sed ruia non numquam eius modi temor
+                  incidunt ut labore et dolore magnam alieuam zuaerat voluta tem
+                  nostrum exercitationem
+                </p>
+                <h4 class="testimonials__subtitle">Peter Johns</h4>
+                <h3 class="testimonials__title">Head of informatics at EBI</h3>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonials__slide">
+                <p class="testimonials__text">
+                  Quisquam est, qui dolorem ipsum quia dolor sit amet conse
+                  aetur, adipisci velit, sed ruia non numquam eius modi temor
+                  incidunt ut labore et dolore magnam alieuam zuaerat voluta tem
+                  nostrum exercitationem
+                </p>
+                <h4 class="testimonials__subtitle">Peter Johns</h4>
+                <h3 class="testimonials__title">Head of informatics at EBI</h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- If we need navigation buttons -->
+          <div class="testimonials__controls">
             <button
-              class="splide__arrow splide__arrow--prev testimonials__arrow testimonials__arrow--prev"
+              class="swiper-button-prev testimonials__control testimonials__control--prev"
             >
               <i class="fa-solid fa-chevron-left"></i>
             </button>
             <button
-              class="splide__arrow splide__arrow--next testimonials__arrow testimonials__arrow--next"
+              class="swiper-button-next testimonials__control testimonials__control--next"
             >
               <i class="fa-solid fa-chevron-right"></i>
             </button>
-          </div>
-          <div class="splide__track">
-            <ul class="splide__list">
-              <li class="splide__slide">
-                <div class="testimonials__item">
-                  <p class="testimonials__text">
-                    Quisquam est, qui dolorem ipsum quia dolor sit amet conse
-                    aetur, adipisci velit, sed ruia non numquam eius modi temor
-                    incidunt ut labore et dolore magnam alieuam zuaerat voluta
-                    tem nostrum exercitationem
-                  </p>
-                  <h4 class="testimonials__title">Peter Johns</h4>
-                  <h5 class="testimonials__subtitle">
-                    Head of informatics at EBI
-                  </h5>
-                </div>
-              </li>
-              <li class="splide__slide">item 2</li>
-              <li class="splide__slide">item 3</li>
-            </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <script src="../node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./js/app.js"></script>
   </body>
 </html>

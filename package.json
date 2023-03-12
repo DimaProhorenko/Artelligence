@@ -9,7 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@splidejs/splide": "^4.1.4",
     "node-sass": "^8.0.0"
   }
 }
