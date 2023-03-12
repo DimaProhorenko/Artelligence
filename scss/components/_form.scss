@@ -1,0 +1,22 @@
+.form {
+    width: 100%;
+    padding: 1.5em;
+
+    &__group {
+        margin-bottom: 2em;
+    }
+
+    &__input {
+        width: 100%;
+        padding: .5em .7em;
+        font-size: 1.1rem;
+        border: 1px solid $clr-dark-blue;
+        border-radius: .5em;
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+
+    &__submit {
+        font-size: 1.2rem;
+    }
+}
