@@ -1,6 +1,8 @@
 .section {
-  padding: 3em 0;
+  padding: 2em 0;
   text-align: center; }
+  .section__content {
+    margin-bottom: 2.5em; }
   .section__subtitle {
     font-size: 1.2rem;
     color: #2be0f7;
@@ -10,13 +12,14 @@
     margin-bottom: .4em; }
   .section__text {
     letter-spacing: 1px;
-    margin-bottom: 2em; }
+    margin-bottom: 1.5em; }
 
 .container {
   width: 90%;
   max-width: 1080px;
   margin: 0 auto;
-  overflow: hidden; }
+  overflow: hidden;
+  padding: 1em 0; }
 
 .main-flex {
   display: flex;
@@ -93,6 +96,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn--primary {
   background: linear-gradient(90deg, #02162d, #36e0f7); }
+
+.btn--round {
+  border-radius: 50%; }
 
 .header {
   position: fixed;
@@ -205,8 +211,7 @@ h1, h2, h3, h4, h5, h6 {
       position: relative;
       bottom: 0;
       left: 50%;
-      transform: translateX(-50%);
-      vertical-align: middle; }
+      transform: translateX(-50%); }
 
 .about__images {
   position: relative;
@@ -252,3 +257,38 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 3em; }
     .choose__list-item {
       margin: .5em 0; }
+
+.study__content {
+  display: flex;
+  flex-direction: column; }
+
+.study__item {
+  position: relative;
+  margin-bottom: 2em; }
+  .study__item-bg {
+    width: 100%;
+    min-height: 25rem; }
+  .study__item-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .study__item-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 2em;
+    text-align: left;
+    color: #ffffff; }
+  .study__item-category {
+    display: inline-block;
+    font-size: .9rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    padding: .3em .8em;
+    background-color: #3e454a;
+    border-radius: 1.5em;
+    margin-bottom: .3em; }
+  .study__item-title {
+    font-size: 1.1rem;
+    margin-bottom: 1em; }

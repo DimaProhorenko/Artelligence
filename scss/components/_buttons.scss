@@ -32,4 +32,8 @@
     &--primary {
         background: linear-gradient(90deg, $clr-gradient-1, $clr-gradient-2);
     }
+
+    &--round {
+        border-radius: 50%;
+    }
 }

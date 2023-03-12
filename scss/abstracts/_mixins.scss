@@ -27,6 +27,11 @@
     @include flex(row, center, center);
 }
 
+@mixin flex-c {
+    display: flex;
+    flex-direction: column;
+}
+
 @mixin flex-cc {
     @include flex-center;
     flex-direction: column;

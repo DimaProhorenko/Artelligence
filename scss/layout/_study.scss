@@ -1,0 +1,49 @@
+.study {
+
+    &__content{
+        @include flex-c;
+    }
+
+    &__item {
+        position: relative;
+        margin-bottom: 2em;
+        
+
+        &-bg {
+            width: 100%;
+            min-height: 25rem;
+        }
+
+        &-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        &-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 2em;
+            text-align: left;
+            color: $clr-white;
+        }
+
+        &-category {
+            display: inline-block;
+            font-size: .9rem;
+            font-weight: 400;
+            text-transform: capitalize;
+            padding: .3em .8em;
+            background-color: $clr-very-dark-grayish-blue;
+            border-radius: 1.5em;
+            margin-bottom: .3em;
+        }
+
+        &-title {
+            font-size: 1.1rem;
+            margin-bottom: 1em;
+        }
+    }
+}
