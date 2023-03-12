@@ -19,6 +19,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="../node_modules/@splidejs/splide/dist/css/splide.min.css"
+    />
     <link rel="stylesheet" href="./css/main.css" />
     <title>Artelligence</title>
   </head>
@@ -62,7 +66,7 @@
     </header>
 
     <section class="hero">
-      <div class="container">
+      <div class="container p-0">
         <div class="hero__content">
           <h1 class="hero__title">
             Bring Force of Artificial Inteligence To Business
@@ -238,7 +242,7 @@
     </section>
 
     <section class="section choose">
-      <div class="container">
+      <div class="container p-0">
         <div class="main-flex choose__container">
           <div class="main-flex__item choose__image-container">
             <div class="choose__image">
@@ -405,6 +409,53 @@
       </div>
     </section>
 
+    <section class="section testimonials">
+      <div class="container">
+        <div class="section__content">
+          <h3 class="section__subtitle">Testimonials</h3>
+          <h2 class="section__title">Hear it From Our Clients</h2>
+        </div>
+        <div
+          class="splide slider testimonials__slider"
+          aria-label="Testimonials Slider"
+        >
+          <div class="splide__arrows testimonials__arrows">
+            <button
+              class="splide__arrow splide__arrow--prev testimonials__arrow testimonials__arrow--prev"
+            >
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button
+              class="splide__arrow splide__arrow--next testimonials__arrow testimonials__arrow--next"
+            >
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="testimonials__item">
+                  <p class="testimonials__text">
+                    Quisquam est, qui dolorem ipsum quia dolor sit amet conse
+                    aetur, adipisci velit, sed ruia non numquam eius modi temor
+                    incidunt ut labore et dolore magnam alieuam zuaerat voluta
+                    tem nostrum exercitationem
+                  </p>
+                  <h4 class="testimonials__title">Peter Johns</h4>
+                  <h5 class="testimonials__subtitle">
+                    Head of informatics at EBI
+                  </h5>
+                </div>
+              </li>
+              <li class="splide__slide">item 2</li>
+              <li class="splide__slide">item 3</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="../node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
     <script src="./js/app.js"></script>
   </body>
 </html>

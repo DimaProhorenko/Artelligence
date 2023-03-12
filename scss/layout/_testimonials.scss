@@ -1,0 +1,33 @@
+.testimonials {
+    background-color: $clr-light-blue;
+    text-align: left;
+
+    &__item {
+        padding: 2em;
+        background-color: $clr-white;
+        border-radius: 2rem;
+        border-bottom: 3px solid $clr-dark-cyan;
+    }
+
+    &__title {
+        color: $clr-accent;
+        text-transform: capitalize;
+        margin: .4em 0 .2em 0;
+    }
+
+    &__subtitle {
+        color: $clr-text;
+        font-weight: 400;
+    }
+
+    &__slider {
+        position: absolute;
+    }
+
+    &__arrows {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
+}

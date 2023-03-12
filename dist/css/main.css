@@ -4,6 +4,7 @@
   .section__content {
     margin-bottom: 2.5em; }
   .section__subtitle {
+    text-transform: uppercase;
     font-size: 1.2rem;
     color: #2be0f7;
     margin-bottom: .2em; }
@@ -20,6 +21,9 @@
   margin: 0 auto;
   overflow: hidden;
   padding: 1em 0; }
+
+.p-0 {
+  padding: 0; }
 
 .main-flex {
   display: flex;
@@ -292,3 +296,26 @@ h1, h2, h3, h4, h5, h6 {
   .study__item-title {
     font-size: 1.1rem;
     margin-bottom: 1em; }
+
+.testimonials {
+  background-color: #eafcfe;
+  text-align: left; }
+  .testimonials__item {
+    padding: 2em;
+    background-color: #ffffff;
+    border-radius: 2rem;
+    border-bottom: 3px solid #2397ae; }
+  .testimonials__title {
+    color: #2293aa;
+    text-transform: capitalize;
+    margin: .4em 0 .2em 0; }
+  .testimonials__subtitle {
+    color: #787878;
+    font-weight: 400; }
+  .testimonials__slider {
+    position: absolute; }
+  .testimonials__arrows {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%); }
