@@ -1,0 +1,23 @@
+.sm {
+    display: flex;
+    justify-content: center;
+
+
+    &__item {
+        margin: 0 .5em;
+    }
+
+
+    &__link {
+        color: inherit;
+        font-size: 1.2rem;
+        width: 2em;
+        height: 2em;
+        display: block;
+        border-radius: 50%;
+        background-color: $clr-very-dark-mostly-black-blue;
+        border: 1px solid $clr-light-blue;
+        text-align: center;
+        line-height: 2em;
+    }
+}

@@ -64,3 +64,9 @@
     object-fit: cover;
     vertical-align: middle;
 }
+
+.hide-mobile {
+    @include for-phone-only {
+        display: none;
+    }
+}

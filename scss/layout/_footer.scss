@@ -1,0 +1,59 @@
+.footer {
+    padding: 2em 0;
+    @include bg-image('../img/footer/footer-background.png');
+    color: $clr-white;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item {
+        
+    }
+
+    &__sm {
+        margin-bottom: 2em;
+    }
+
+    &__link {
+        color: inherit;
+    }
+
+    &__logo {
+        width: 12rem;
+        margin-bottom: 1em;
+    }
+    
+    &__lead {
+        font-size: .95rem;
+        margin-bottom: 1em;
+    }
+
+    &__title {
+        font-size: 1.2rem;
+        font-weight: 500;
+        letter-spacing: 1;
+        margin-bottom: .6em;
+    }
+
+    &__contact {
+        text-align: left;
+
+        .footer__title {
+            text-align: center;
+        }
+    }
+
+    &__list-item {
+        margin-bottom: .6em;
+        i {
+            display: inline-block;
+            margin-right: .5em;
+        }
+    }
+
+    &__separator {
+        margin: 1em 0;
+    }
+}

@@ -1,9 +1,12 @@
 @import './abstracts/vars';
 @import './abstracts/mixins';
 @import './abstracts/utils';
+
 @import './base/reset';
 @import './components/buttons';
 @import './components/form';
+@import './components/sm';
+
 @import './layout/header';
 @import './layout/hero';
 @import './layout/about';
@@ -12,3 +15,4 @@
 @import './layout/study';
 @import './layout/testimonials';
 @import './layout/contact';
+@import './layout/footer';
