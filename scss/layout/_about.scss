@@ -10,11 +10,20 @@
         position: absolute;
         bottom: -2rem;
         right: 0;
+
+        @include for-tablet-up {
+            max-width: 15rem;
+        }
     }
 
     &__lower {
+        @include flex-cc;
         &-item {
             margin-bottom: 1.5em;
+
+            @include for-tablet-up {
+                max-width: 30rem;
+            }
         }
     }
 }

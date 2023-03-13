@@ -37,8 +37,9 @@
 }
 
 @mixin flex-cc {
-    @include flex-center;
+    display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 @mixin bg-image($url, $position: center, $size: cover, $repeat: no-repeat) {

@@ -5,6 +5,12 @@
 
     &__item {
         margin: 0 .5em;
+
+        &:first-child {
+            @include for-tablet-up {
+                margin-left: 0;
+            }
+        }
     }
 
 

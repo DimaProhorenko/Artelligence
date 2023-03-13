@@ -1,11 +1,25 @@
 .services {
     background-color: $clr-light-blue;
+
     &__content {
-        @include flex(column, flex-start);
+        @include flex(column, flex-start, center);
+
+        @include for-tablet-up {
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+        }
         
     }
 
     &__item {
+        padding: 2em;
+        background-color: $clr-white;
+        border-radius: 20px;
+
+        @include for-tablet-up {
+            width: 47%;
+        }
             
         &:not(:last-child) {
             margin-bottom: 2em;
@@ -14,6 +28,16 @@
         &-title {
             font-size: 1.2rem;
             margin: .5em 0;
+
+            @include for-tablet-up {
+                font-size: 1.4rem;
+            }
+        }
+
+        &-text {
+            @include for-tablet-up {
+                font-size: 1.2rem;
+            }
         }
 
     }

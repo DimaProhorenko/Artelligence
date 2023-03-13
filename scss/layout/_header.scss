@@ -23,7 +23,7 @@
     &__burger {
         z-index: 100;
 
-        @include for-tablet-up {
+        @include for-desktop-up {
             display: none;
         }
 
@@ -87,6 +87,7 @@
         @include bg-image('../img/banner/banner-background.png');
         color: $clr-white;
         @include flex-cc;
+        justify-content: center;
         text-align: center;
         z-index: 99;
         transition: transform cubic-bezier(0.56, 0.04, 0.95, 1.23) 250ms;

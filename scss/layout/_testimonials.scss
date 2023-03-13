@@ -12,6 +12,19 @@
         background-color: $clr-white;
         border-bottom: 3px solid $clr-dark-cyan;
         text-align: left;
+
+        @include for-tablet-up {
+            width: 70%;
+            margin: 0 auto;
+        }
+    }
+
+    &__image {
+        width: 8rem;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
     }
 
     &__subtitle {
@@ -56,6 +69,10 @@
         top: 50%;
         right: 10%;
         transform: translate(50%, -50%);
+
+        @include for-tablet-up {
+            right: 15%;
+        }
 
         &::after {
             display: none;

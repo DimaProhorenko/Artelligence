@@ -11,6 +11,9 @@ body {
     color: $clr-primary;
     line-height: 1.6;
     background-color: $clr-white;
+    @include for-tablet-up {
+        font-size: 1.2rem;
+    }
 }
 
 ul {

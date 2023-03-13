@@ -2,6 +2,15 @@
     width: 100%;
     padding: 1.5em;
 
+    @include for-tablet-up {
+        padding: 2em;
+    }
+
+    &--shadow {
+        box-shadow: .2px 2px 1em rgba($clr-dark-cyan, .1);
+        border-radius: 1em;
+    }
+
     &__group {
         margin-bottom: 2em;
     }
@@ -10,7 +19,7 @@
         width: 100%;
         padding: .5em .7em;
         font-size: 1.1rem;
-        border: 1px solid $clr-dark-blue;
+        border: 1px solid $clr-dark-cyan;
         border-radius: .5em;
         font-size: 1.2rem;
         cursor: pointer;

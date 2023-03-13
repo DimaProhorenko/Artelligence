@@ -2,6 +2,10 @@
     padding: 2em 0;
     text-align: center;
 
+    @include for-tablet-up {
+        padding: 4em 0;
+    }
+
     &__content {
         margin-bottom: 2.5em;
     }
@@ -11,16 +15,29 @@
         font-size: 1.2rem;
         color: $clr-secondary;
         margin-bottom: .2em;
+
+        @include for-tablet-up {
+            font-size: 1.4rem;
+        }
     }
 
     &__title {
         font-size: 1.6rem;
         margin-bottom: .4em;
+
+        @include for-tablet-up {
+            font-size: 2rem;
+        }
     }
 
     &__text {
         letter-spacing: 1px;
         margin-bottom: 1.5em;
+
+        @include for-tablet-up {
+            font-size: 1.2rem;
+            margin-bottom: 2em;
+        }
     }
 }
 
@@ -39,21 +56,13 @@
 .main-flex {
     @include flex(column, flex-start);
 
-    @include for-tablet-up {
-        flex-direction: row;
-        justify-content: space-between;
-
-    }
+    
 
     &__item {
         width: 100%;
 
         &:not(:last-child) {
             margin-bottom: 4em;
-        }
-
-        @include for-tablet-up {
-            width: 45%;
         }
     }
 }

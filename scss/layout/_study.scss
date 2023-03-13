@@ -2,11 +2,21 @@
 
     &__content{
         @include flex-c;
+
+        @include for-tablet-up {
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+        }
     }
 
     &__item {
         position: relative;
         margin-bottom: 2em;
+
+        @include for-tablet-up {
+            width: 47%;
+        }
         
 
         &-bg {
@@ -28,6 +38,7 @@
             padding: 2em;
             text-align: left;
             color: $clr-white;
+
         }
 
         &-category {

@@ -6,13 +6,18 @@
     color: $clr-white;
     text-transform: capitalize;
     padding: .65em 1em;
+    font-size: 1.2rem;
+
+
+    @include for-tablet-up {
+        font-size: 1.4rem;
+    }
 }
 
 .btn {
     @extend %btn;
 
     &__icon {
-        font-size: 1.2rem;
         display: inline-block;
         margin-left: .5em;
         color: $clr-primary;
