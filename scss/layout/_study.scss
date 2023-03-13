@@ -1,27 +1,44 @@
 .study {
-
+    @include for-desktop-up {
+        text-align: center
+    }
     &__content{
         @include flex-c;
 
         @include for-tablet-up {
             flex-wrap: wrap;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: flex-start;
+            gap: 2em;
         }
+    }
+
+    &__link {
+        margin: 2em 0;
+        display: inline-block;
     }
 
     &__item {
         position: relative;
         margin-bottom: 2em;
+        overflow: hidden;
+        border-radius: 2em;
+        
+        
 
         @include for-tablet-up {
             width: 47%;
+        }
+
+        @include for-desktop-up {
+            width: 30%;
+            margin-bottom: 0;
         }
         
 
         &-bg {
             width: 100%;
-            min-height: 25rem;
+            // min-height: 25rem;
         }
 
         &-img {

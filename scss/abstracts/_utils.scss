@@ -5,6 +5,9 @@
     @include for-tablet-up {
         padding: 4em 0;
     }
+    @include for-desktop-up {
+        text-align: left;
+    }
 
     &__content {
         margin-bottom: 2.5em;
@@ -56,13 +59,25 @@
 .main-flex {
     @include flex(column, flex-start);
 
+    @include for-desktop-up {
+        flex-direction: row;
+        gap: 2em;
+    }
+
     
 
     &__item {
         width: 100%;
 
+        @include for-desktop-up {
+            width: 47%;
+        }
+
         &:not(:last-child) {
             margin-bottom: 4em;
+            @include for-desktop-up {
+                margin-bottom: 0;
+            }
         }
     }
 }

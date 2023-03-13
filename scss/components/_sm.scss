@@ -25,5 +25,14 @@
         border: 1px solid $clr-light-blue;
         text-align: center;
         line-height: 2em;
+        transition-property: transform;
+        transition-duration: 150ms;
+        transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+
+        &:hover {
+            background: linear-gradient(90deg, $clr-gradient-1,  $clr-gradient-2);
+            transform: translateY(-.5em);
+            box-shadow: .3em .5em .5em rgba(0,0,0, .9);
+        }
     }
 }

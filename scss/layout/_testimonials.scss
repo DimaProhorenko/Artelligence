@@ -1,6 +1,8 @@
 .testimonials {
     background-color: $clr-light-blue;
-
+    @include for-desktop-up {
+        text-align: center;
+    }
     &__slider {
         max-width: 800px;
     }

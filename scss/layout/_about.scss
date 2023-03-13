@@ -18,6 +18,9 @@
 
     &__lower {
         @include flex-cc;
+        @include for-desktop-up {
+            align-items: flex-start;
+        }
         &-item {
             margin-bottom: 1.5em;
 

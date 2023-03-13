@@ -69,31 +69,35 @@
     <section class="hero">
       <div class="container p-0">
         <div class="hero__content">
-          <h1 class="hero__title">
-            Bring Force of Artificial Inteligence To Business
-          </h1>
-          <p class="hero__lead">
-            Quis autem vel eum iure reprehenderit aui in ea voluptate velit esse
-            ruam nihil molestiae conseuatur.
-          </p>
-          <div class="hero__cta flex-jc-sb">
-            <a href="#" class="btn btn--primary btn--icon hero__cta-btn"
-              >Read More
-              <span class="btn__icon"
-                ><i class="fa-solid fa-angle-right"></i></span
-            ></a>
-            <a href="#" class="btn btn--primary btn--icon hero__cta-btn"
-              >Contact Us
-              <span class="btn__icon"
-                ><i class="fa-solid fa-angle-right"></i></span
-            ></a>
+          <div class="hero__item hero__item--left">
+            <h1 class="hero__title">
+              Bring Force of Artificial Inteligence To Business
+            </h1>
+            <p class="hero__lead">
+              Quis autem vel eum iure reprehenderit aui in ea voluptate velit
+              esse ruam nihil molestiae conseuatur.
+            </p>
+            <div class="hero__cta flex-jc-sb">
+              <a href="#" class="btn btn--primary btn--icon hero__cta-btn"
+                >Read More
+                <span class="btn__icon"
+                  ><i class="fa-solid fa-angle-right"></i></span
+              ></a>
+              <a href="#" class="btn btn--primary btn--icon hero__cta-btn"
+                >Contact Us
+                <span class="btn__icon"
+                  ><i class="fa-solid fa-angle-right"></i></span
+              ></a>
+            </div>
           </div>
-          <div class="hero__image">
-            <img
-              src="./img/banner/banner-image.png"
-              alt=""
-              class="absolute-img"
-            />
+          <div class="hero__item hero__item--right">
+            <div class="hero__image">
+              <img
+                src="./img/banner/banner-image.png"
+                alt=""
+                class="absolute-img"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -171,7 +175,7 @@
     <section class="section services">
       <div class="container">
         <div class="main-flex">
-          <div class="main-flex__item">
+          <div class="main-flex__item services__left">
             <div class="section__content">
               <h3 class="section__subtitle">Services We Provide</h3>
               <h2 class="section__title">
@@ -431,6 +435,13 @@
             </div>
             <div class="swiper-slide">
               <div class="testimonials__slide">
+                <div class="testimonials__image hide-mobile">
+                  <img
+                    src="./img/testimonials/testimonial-image.png"
+                    alt="our client"
+                    class="testimonials__img"
+                  />
+                </div>
                 <p class="testimonials__text">
                   Quisquam est, qui dolorem ipsum quia dolor sit amet conse
                   aetur, adipisci velit, sed ruia non numquam eius modi temor
@@ -443,6 +454,13 @@
             </div>
             <div class="swiper-slide">
               <div class="testimonials__slide">
+                <div class="testimonials__image hide-mobile">
+                  <img
+                    src="./img/testimonials/testimonial-image.png"
+                    alt="our client"
+                    class="testimonials__img"
+                  />
+                </div>
                 <p class="testimonials__text">
                   Quisquam est, qui dolorem ipsum quia dolor sit amet conse
                   aetur, adipisci velit, sed ruia non numquam eius modi temor
@@ -458,12 +476,12 @@
           <!-- If we need navigation buttons -->
           <div class="testimonials__controls">
             <button
-              class="swiper-button-prev testimonials__control testimonials__control--prev"
+              class="swiper-button-prev testimonials__control testimonials__control--prev btn btn--opacity"
             >
               <i class="fa-solid fa-chevron-left"></i>
             </button>
             <button
-              class="swiper-button-next testimonials__control testimonials__control--next"
+              class="swiper-button-next testimonials__control testimonials__control--next btn btn--opacity"
             >
               <i class="fa-solid fa-chevron-right"></i>
             </button>
