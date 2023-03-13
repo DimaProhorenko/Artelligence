@@ -29,7 +29,9 @@
         }
 
         &:nth-child(even) {
-            margin-top: 2em;
+            @include for-desktop-up {
+                margin-top: 2em;
+            }
         }
 
             
