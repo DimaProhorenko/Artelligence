@@ -597,10 +597,6 @@ h1, h2, h3, h4, h5, h6 {
 .faq {
   text-align: center; }
 
-.contact {
-  padding: 2em;
-  text-align: center; }
-
 .footer {
   padding: 2em 0;
   background: center/cover no-repeat url("../img/footer/footer-background.png");
