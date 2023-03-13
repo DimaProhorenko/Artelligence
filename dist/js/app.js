@@ -18,4 +18,6 @@ document.addEventListener('DOMContentLoaded', e => {
         loop: true,
         spaceBetween: 50,
     });
+
+    AOS.init();
 })

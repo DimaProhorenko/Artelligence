@@ -2,6 +2,7 @@
     padding-bottom: 0;
     color: $clr-white;
     @include bg-image('../img/banner/banner-background.png');
+
     &__image {
         position: relative;
 
@@ -9,6 +10,10 @@
             order: 2;
             margin-bottom: 0 !important;
             align-self: flex-end;
+
+            @include for-desktop-up {
+                order: initial;
+            }
         }
     }
 
